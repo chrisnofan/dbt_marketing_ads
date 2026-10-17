@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_facebook_ads_stats  # Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the facebook_ads_stats table."
+
+    columns:
+      - name: ad_id
+        description: "The unique identifier for the Facebook ad."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        description: "The unique identifier for the Facebook account."
+
+      - name: ad_spend
+        description: "The amount spent on the Facebook ad."
+
+      - name: account_impressions
+        description: "The number of times the Facebook ad was displayed."
+
+      - name: ad_clicks
+        description: "The number of clicks on the Facebook ad."
+
+      - name: ad_date
+        description: "The date for which the Facebook ad statistics are recorded."        

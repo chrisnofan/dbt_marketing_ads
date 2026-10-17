@@ -1,0 +1,10 @@
+sources:
+  - name: facebook_ads
+    database: dbt_marketing
+    schema: source 
+    tables:
+      - name: facebook_account
+      - name: facebook_adgroup
+      - name: facebook_ads
+      - name: facebook_campaign
+      - name: facebook_ads_stats

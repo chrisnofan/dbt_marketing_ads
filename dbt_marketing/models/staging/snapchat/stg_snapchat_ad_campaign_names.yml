@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_snapchat_ad_campaign_names #  Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the snapchat_ad_campaign_names table."
+
+    columns:
+      - name: campaign_id
+        description: "The unique identifier for the Snapchat campaign."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        description: "The unique identifier for the Snapchat account."
+       
+      - name: campaign_name
+        description: "The name of the Snapchat campaign."
+        

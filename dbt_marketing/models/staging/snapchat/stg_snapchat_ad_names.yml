@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_snapchat_ad_names #  Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the snapchat_ad_names table."
+
+    columns:
+      - name: ad_id
+        description: "The unique identifier for the Snapchat ad."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: ad_group_name
+        description: "The name of the Snapchat ad group."
+
+      - name: ad_name
+        description: "The unique identifier for the Snapchat ad group."
+
+      - name: ad_detail_updated_at
+        description: "The timestamp when the Snapchat ad was last updated."
+        

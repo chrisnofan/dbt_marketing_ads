@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_snapchat_ads_stats #  Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the snapchat_ads_stats table."
+
+    columns:
+      - name: ad_details_id
+        description: "The unique identifier for the Snapchat ad details."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: ad_currency
+        description: "The currency used for the Snapchat ad spend."
+      
+      - name: ad_country
+        description: "The country for which the Snapchat ad is targeted."
+
+      - name: ad_spend
+        description: "The total amount spent on the Snapchat ad during the reporting period."
+        
+      - name: ad_impressions
+        description: "The number of times the Snapchat ad was displayed to users."  
+       
+      - name: ad_clicks
+        description: "The number of times users clicked on the Snapchat ad."
+        
+      - name: ad_date
+        description: "The date for which the Snapchat ad statistics are recorded."
+
+      - name: data_src
+        description: "The source of the ad data."
+        

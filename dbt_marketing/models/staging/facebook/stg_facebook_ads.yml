@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_facebook_ads  # Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the facebook_ads table."
+
+    columns:
+      - name: ad_id
+        description: "The unique identifier for the Facebook ad."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: campaign_id
+        description: "The unique identifier for the Facebook campaign."
+
+      - name: ad_group_id
+        description: "The unique identifier for the Facebook ad group."
+
+      - name: account_id
+        description: "The unique identifier for the Facebook account."
+        
+      - name: ad_name
+        description: "The name of the Facebook ad."
+        
+      - name: ad_status
+        description: "The status of the Facebook ad (e.g., active, paused, deleted)"
+        data_tests:
+          - accepted_values:
+              arguments: # available in v1.10.5 and higher. Older versions can set the <argument_name> as the top-level property.
+                values: ['archived', 'paused', 'active', 'deleted']
+        
+      - name: ad_updated_at
+        description: "The timestamp when the Facebook ad was last updated."
+        

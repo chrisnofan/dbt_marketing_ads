@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_facebook_account #  Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the facebook_account table."
+    
+    columns:
+      - name: account_id
+        description: "The unique identifier for the Facebook account."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: account_name
+        description: "The name of the Facebook account."
+
+      - name: ad_currrency_code
+        description: "The currency code used for the Facebook account."
+
+      - name: account_created_at
+        description: "The timestamp when the Facebook account was created."
+
+      - name: account_updated_at
+        description: "The timestamp when the Facebook account was last updated."  

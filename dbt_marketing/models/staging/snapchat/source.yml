@@ -1,0 +1,11 @@
+sources:
+  - name: snapchat_ads
+    database: dbt_marketing
+    schema: source
+    tables:
+      - name: snapchat_ad_group_names
+      - name: snapchat_ad_names
+      - name: snapchat_ad_campaign_names
+      - name: snapchat_ads_stats
+    
+

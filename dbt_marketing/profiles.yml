@@ -1,0 +1,11 @@
+dbt_marketing:
+  outputs:
+    dev:
+      catalog: dbt_marketing
+      host: dbc-42a099ac-d1a9.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/c151a5ade79c9e30
+      schema: default
+      threads: 8
+      token: 
+      type: databricks
+  target: dev

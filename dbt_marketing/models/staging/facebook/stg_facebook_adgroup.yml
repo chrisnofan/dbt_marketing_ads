@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_facebook_adgroup #  Must match the filename of a model -- including case sensitivity.
+    description: "This model is a staging model for the facebook_adgroup table."
+
+    columns:
+      - name: ad_group_id
+        description: "The unique identifier for the Facebook ad group."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: ad_group_name
+        description: "The name of the Facebook ad group."
+
+      - name: ad_group_updated_at
+        description: "The timestamp when the Facebook ad group was last updated."
